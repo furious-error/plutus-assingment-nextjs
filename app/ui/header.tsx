@@ -5,7 +5,6 @@ import React, {useState} from "react";
 
 
 export function Header() {
-    const logo = "public/logo.png";
     const navItems = [
         { label: "Features", href: "#features" },
         { label: "Developers", href: "#capabilities" },

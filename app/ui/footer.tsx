@@ -1,5 +1,4 @@
 export function Footer(){
-    const logo = "public/logo.png";
     const footerLinks = {
         Product: ["Features", "Integrations", "Pricing", "Updates", "FAQ"],
         Company: ["About", "Careers", "Blog", "Manifesto", "Press", "Contact"],
