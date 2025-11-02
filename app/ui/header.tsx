@@ -5,6 +5,7 @@ import React, {useState} from "react";
 
 
 export function Header() {
+    const logo = "public/logo.png";
     const navItems = [
         { label: "Features", href: "#features" },
         { label: "Developers", href: "#capabilities" },
@@ -18,7 +19,7 @@ export function Header() {
     return (
         <header className="sticky top-0 z-30 border-b border-white/10 bg-[#05000f]/70 backdrop-blur">
             <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 gap-2">
-                <img src="/logo.png" alt="AI Startup Kit Logo" />
+                <img src={logo.replace(/^public\//, "/")} alt="AI Startup Kit Logo" />
                 <nav className="hidden items-center gap-8 text-sm text-white/70 md:flex border rounded-full border-white/10 py-4 px-8">
                     {navItems.map((item) => (
                         <Link

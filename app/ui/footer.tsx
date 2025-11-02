@@ -1,4 +1,5 @@
 export function Footer(){
+    const logo = "public/logo.png";
     const footerLinks = {
         Product: ["Features", "Integrations", "Pricing", "Updates", "FAQ"],
         Company: ["About", "Careers", "Blog", "Manifesto", "Press", "Contact"],
@@ -10,7 +11,7 @@ export function Footer(){
             <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-12 md:flex-row md:justify-between">
                 <div className="flex-row justify-between">
                     <div className="flex items-center gap-3">
-                        <img src="/logo.png" alt="AI Startup Kit Logo" />
+                        <img src={logo.replace(/^public\//, "/")} alt="AI Startup Kit Logo" />
                         <span className="text-sm font-medium text-white/90">AI Startup Kit</span>
                         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 text-xs text-white/40 md:hidden lg:hidden">
                             <div className="flex items-center gap-3">
